@@ -18,7 +18,7 @@ The recommended way to setup a working python environment is to use Anaconda dis
 * MKL [Optional]
 
 ## MyMediaLite support
-We provide python wrapper for MyMediaLite (MML) library with additional functionality for quick online recommendations. Note, that fixed version of MML (v. 3.11) is already included into repository (this ensures reproducibility of the results). If you encounter any problems running running MML binaries, ensure that [Mono](http://www.mono-project.com/) is supported by your system. You may also find help at MML [Google Group](https://groups.google.com/forum/#!forum/mymedialite).
+We provide python wrapper for [MyMediaLite](http://www.mymedialite.net) (MML) library with additional functionality for quick online recommendations. Note, that fixed version of MML (v. 3.11) is already included into repository (this ensures reproducibility of the results). If you encounter any problems running running MML binaries, ensure that [Mono](http://www.mono-project.com/) is supported by your system. You may find additional help by visiting MML [Google Group](https://groups.google.com/forum/#!forum/mymedialite) or [Github Issues](https://github.com/zenogantner/MyMediaLite/issues/) page.
 
 ## OS support
 The code was tested on both Windows and Linux. Can possibly run on OSX however this was not tested yet.
