@@ -1,0 +1,1 @@
+folder to store working and temporary files created by MyMediaLite library
