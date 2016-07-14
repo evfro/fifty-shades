@@ -1,0 +1,36 @@
+Requirements for running MyMediaLite:
+ - Mono 2.8.x or another recent .NET runtime (Mono 2.10.x recommended)
+ - Perl and File::Slurp for the download and data processing scripts
+   (not necessary for running/building MyMediaLite)
+
+Instructions:
+ - If you have the binary package, just copy its contents to wherever you
+   want and run the programs from there.
+   - On Unix systems: copy bin/ and lib/ e.g. to /usr/local or to ~,
+     and make sure that bin/ is withing your PATH.
+ - To build from source:
+   - On Unix systems: run "make all", set the PREFIX varible in the Makefile,
+                      then run "make install"
+   - On Windows, compile using Visual Studio or MonoDevelop
+
+Requirements for building MyMediaLite:
+ - the above requirements plus
+   - Doxygen 1.6.3 or later
+
+Tested configurations:
+ - Ubuntu 10.04
+   - with manually installed Mono 2.10.5 and MonoDevelop 2.6/2.8.1
+   - Doxygen 1.6.3
+ - Ubuntu 11.10
+   - with Mono 2.10.5
+ - Ubuntu 14-04
+   - with Mono 3.2.8 and and MonoDevelop 4.0.12
+ - Debian Wheezy
+   - with Mono 2.10.1 and MonoDevelop 2.8.2
+ - Windows with Visual Studio 2010
+
+Let us know on which configuration of .NET or Mono you are using MyMediaLite,
+or whether you experience difficulties.
+
+e-mail contact:   mymedialite@googlegroups.com
+Google group:     http://groups.google.com/group/mymedialite
