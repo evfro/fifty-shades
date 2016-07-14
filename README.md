@@ -1,3 +1,34 @@
-# fifty-shades
-Source code for ACM RecSys'16 paper "Fifty Shades of Ratings: How to Benefit from a Negative Feedback in Top-N Recommendations Tasks".
-You can find a demo web application at http://coremodel.azurewebsites.net.
+# Fifty Shades of Ratings: How to Benefit from a Negative Feedback in Top-N Recommendations Tasks
+This is a *"fixed state"* version of the code, that can be used to fully reproduce the work described in our paper. See **Example_ML1M.ipynb** for an exact experiment workflow. You're also welcome to explore other jupyter notebooks for more experimental results.
+
+## Prerequisites
+No installation is required. Simply get a copy of this code and unpack it somewhere on your PC.
+
+The recommended way to setup a working python environment is to use Anaconda distribution https://www.continuum.io/downloads. However, you may create your own environment with the following packages:
+
+* Python 2.7
+* Pandas
+* Numpy
+* Scipy
+* Matplotlib
+* Numba
+* Seaborn
+* Requests
+* Jupyter Notebook
+* MKL [Optional]
+
+## MyMediaLite support
+We provide python wrapper for MyMediaLite (MML) library with additional functionality for quick online recommendations. Note, that fixed version of MML (v. 3.11) is already included into repository (this ensures reproducibility of the results). If you encounter any problems running running MML binaries, ensure that [Mono](http://www.mono-project.com/) is supported by your system. You may also find help at MML [Google Group](https://groups.google.com/forum/#!forum/mymedialite).
+
+## OS support
+The code was tested on both Windows and Linux. Can possibly run on OSX however this was not tested yet.
+
+## Isolated environment
+It may be a good idea to create an isolated conda environment for experimentation.
+```
+conda create -n shades python=2.7 pandas matplotlib numpy scipy numba mkl jupyter seaborn requests
+```
+Activate newly created `shades` with eithr `source activate shades` (Linux) or `activate shades` (Windows), navigate to the unpacked folder in your shell and run jupyter notebook:
+```
+jupyter notebook
+```
