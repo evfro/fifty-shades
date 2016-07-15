@@ -1,5 +1,5 @@
 # Fifty Shades of Ratings: How to Benefit from a Negative Feedback in Top-N Recommendations Tasks
-This is a *"fixed state"* version of the code from [Polara framework](https://github.com/evfro/polara), that can be used to fully reproduce the work described in our paper. See **Example_ML1M.ipynb** for an exact experiment workflow. You're also welcome to explore other jupyter notebooks for more experimental results or check out our online demo at http://coremodel.azurewebsites.net.
+This is a *"fixed state"* version of the code from [Polara framework](https://github.com/evfro/polara), that can be used to fully reproduce the work described in our paper. See [**Example_ML1M.ipynb**](Example_ML1M.ipynb) for an exact experiment workflow. You're also welcome to explore other jupyter notebooks for more experimental results or check out our online demo at http://coremodel.azurewebsites.net.
 
 ## Prerequisites
 No installation is required. Simply get a copy of this code and unpack it somewhere on your PC.
