@@ -22,4 +22,4 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-comp
 USER main
 
 # Install requirements for Python 2
-RUN pip install -y Seaborn
+RUN pip install seaborn
