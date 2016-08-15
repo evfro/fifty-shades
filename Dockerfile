@@ -13,12 +13,12 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.2.11 main" > /etc/apt/sources.list.d/mono-xamarin.list \
   && apt-get update \
-  && apt-get install -y libmono-microsoft-visualbasic10.0-cil libmono-microsoft-visualbasic11.0-cil mono-xsp4-base mono-xsp4 ca-certificates-mono mono-complete binutils fsharp mono-vbnc referenceassemblies-pcl \
+  && apt-get install -y libmono-microsoft-visualbasic10.0-cil mono-xsp4-base mono-xsp4 ca-certificates-mono mono-complete fsharp mono-vbnc referenceassemblies-pcl \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-#RUN echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-#  && apt-get update \
-#  && rm -rf /var/lib/apt/lists/* /tmp/*
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" >> /etc/apt/sources.list.d/mono-xamarin.list \
+  && apt-get update \
+  && rm -rf /var/lib/apt/lists/* /tmp/*
 
 USER main
 
