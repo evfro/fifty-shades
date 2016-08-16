@@ -5,7 +5,6 @@ MAINTAINER Evgeny Frolov
 USER root
 
 # Add dependency
-# libmono-system-design4.0-cil libmono-system-drawing-design4.0-cil libmono-system-drawing4.0-cil libmono-system-web4.0-cil libmono-system-web-services4.0-cil libmono-system-windows-forms4.0-cil
 RUN apt-get update \
   && apt-get install -y curl libmono-cil-dev \
   && rm -rf /var/lib/apt/lists/*
@@ -17,11 +16,10 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" > /etc/a
   && apt-get install -y mono-devel mono-4.0-service mono-complete ca-certificates-mono \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-#RUN echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" >> /etc/apt/sources.list.d/mono-xamarin.list \
-#  && apt-get update \
-#  && rm -rf /var/lib/apt/lists/* /tmp/*
-
 USER main
 
 # Install requirements for Python 2
 RUN conda install -y seaborn --no-dep
+
+# Set permissions for MyMediaLite
+RUN chmod =rwx MyMediaLite-3.11/bin/item_recommendation
