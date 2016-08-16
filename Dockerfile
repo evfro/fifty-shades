@@ -13,7 +13,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" > /etc/apt/sources.list.d/mono-xamarin.list \
   && apt-get update \
-  && apt-get install -y mono-runtime ca-certificates-mono \
+  && apt-get install -y mono-runtime mono-develop ca-certificates-mono \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 USER main
@@ -22,4 +22,4 @@ USER main
 RUN conda install -y seaborn --no-dep
 
 # Set permissions for MyMediaLite
-# RUN chmod =rwx MyMediaLite-3.11/bin/item_recommendation
+RUN chmod =rx MyMediaLite-3.11/bin/item_recommendation
