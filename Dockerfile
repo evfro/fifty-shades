@@ -11,7 +11,7 @@ RUN apt-get update \
 
 # Latex dependencies
 RUN apt-get update \
-  && apt-get --no-install-recommends install texlive-latex-extra texlive-fonts-recommended dvipng \
+  && apt-get --no-install-recommends install -y texlive-latex-extra texlive-fonts-recommended dvipng \
   && rm -rf /var/lib/apt/lists/*
 
 # Mono
