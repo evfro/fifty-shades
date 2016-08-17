@@ -1,9 +1,15 @@
 # Fifty Shades of Ratings: How to Benefit from a Negative Feedback in Top-N Recommendations Tasks
 This is a *"fixed state"* version of the code from [Polara framework](https://github.com/evfro/polara), that can be used to fully reproduce the work described in our paper. See [**Example_ML1M.ipynb**](Example_ML1M.ipynb) for an exact experiment workflow. You're also welcome to explore other jupyter notebooks for more experimental results or check out our online demo at http://coremodel.azurewebsites.net.
 
-## Prerequisites
+## [NEW] Run code online with binder
+A quick way to reproduce results without any installation hassle:
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/evfro/fifty-shades)
+
+## Get your own copy to run offline
 No installation is required. Simply get a copy of this code and unpack it somewhere on your PC.
 
+### Prerequisites
 The recommended way to setup a working python environment is to use Anaconda distribution https://www.continuum.io/downloads. However, you may create your own environment with the following packages:
 
 * Python 2.7
