@@ -4,6 +4,8 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
+RUN ls .
+
 # General dependencies
 RUN apt-get update \
   && apt-get install -y curl libmono-cil-dev \
@@ -22,15 +24,12 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" > /etc/a
   && apt-get install -y mono-runtime mono-devel ca-certificates-mono \
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
-# Set permissions for MyMediaLite
-RUN ls
-
 USER main
+
+RUN ls .
 
 # Install requirements for Python 2
 RUN conda install -y seaborn --no-dep
 
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
-
-RUN ls
