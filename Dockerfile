@@ -23,7 +23,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" > /etc/a
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Set permissions for MyMediaLite
-RUN chmod =rx /MyMediaLite-3.11/bin/item_recommendation
+RUN ls
 
 USER main
 
@@ -32,3 +32,5 @@ RUN conda install -y seaborn --no-dep
 
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
+
+RUN ls
