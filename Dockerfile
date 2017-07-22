@@ -7,6 +7,8 @@ USER root
 
 RUN find / -type d -name MyMediaLite-3*
 
+RUN ls
+
 # General dependencies
 #RUN apt-get update \
 #  && apt-get install -y curl libmono-cil-dev \
@@ -33,4 +35,4 @@ USER main
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
 
-RUN find / -type d -name MyMediaLite-3*
+RUN ls
