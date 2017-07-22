@@ -5,8 +5,6 @@ LABEL maintainer="Evgeny Frolov"
 
 USER root
 
-CMD ["chmod","=rx","/home/main/notebooks/MyMediaLite-3.11/bin/item_recommendation"]
-
 # General dependencies
 RUN apt-get update \
   && apt-get install -y curl libmono-cil-dev \
@@ -30,3 +28,4 @@ USER main
 # Install requirements for Python 2
 RUN conda install -y seaborn --no-dep
 
+CMD chmod =rx /home/main/notebooks/MyMediaLite-3.11/bin/item_recommendation
