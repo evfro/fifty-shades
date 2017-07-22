@@ -33,4 +33,9 @@ USER main
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
 
-RUN ls /notebooks
+RUN ls .
+RUN ls ..
+RUN ls ~
+RUN ls /
+RUN ls /home/main/notebooks
+
