@@ -5,7 +5,7 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
-COPY . /home/main/notebooks
+RUN COPY . /home/main/notebooks
 
 RUN ls /home/main/notebooks
 
@@ -35,4 +35,4 @@ USER main
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
 
-RUN ls
+RUN ls /notebooks
