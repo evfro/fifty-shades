@@ -1,5 +1,5 @@
-# FROM andrewosh/binder-base
-FROM jupyter/base-notebook
+FROM andrewosh/binder-base
+#FROM jupyter/base-notebook
 
 MAINTAINER Evgeny Frolov
 
