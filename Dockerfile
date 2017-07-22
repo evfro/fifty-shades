@@ -5,9 +5,9 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
-RUN find / -type d -name MyMediaLite-3*
+COPY . /home/main/notebooks
 
-RUN ls
+RUN ls /home/main/notebooks
 
 # General dependencies
 #RUN apt-get update \
