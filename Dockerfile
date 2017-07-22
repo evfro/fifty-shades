@@ -4,7 +4,13 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
-RUN ls .
+RUN ls /home
+
+RUN ls /root
+
+RUN ls ~
+
+RUN ls ..
 
 # General dependencies
 RUN apt-get update \
@@ -25,8 +31,6 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy main" > /etc/a
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 USER main
-
-RUN ls .
 
 # Install requirements for Python 2
 RUN conda install -y seaborn --no-dep
