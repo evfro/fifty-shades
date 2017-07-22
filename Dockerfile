@@ -5,9 +5,7 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
-RUN COPY . /home/main/notebooks
-
-RUN ls /home/main/notebooks
+COPY . /home/main/notebooks
 
 # General dependencies
 #RUN apt-get update \
