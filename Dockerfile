@@ -1,9 +1,11 @@
 FROM andrewosh/binder-base
 #FROM jupyter/base-notebook
 
-MAINTAINER Evgeny Frolov
+LABEL maintainer="Evgeny Frolov"
 
 USER root
+
+CMD ["chmod","=rx","/home/main/notebooks/MyMediaLite-3.11/bin/item_recommendation"]
 
 # General dependencies
 RUN apt-get update \
@@ -28,8 +30,3 @@ USER main
 # Install requirements for Python 2
 RUN conda install -y seaborn --no-dep
 
-USER root
-
-COPY . /home/main/notebooks
-RUN chmod =rx /home/main/notebooks/MyMediaLite-3.11/bin/item_recommendation
-RUN chown -R main:main /home/main/notebooks
