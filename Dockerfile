@@ -4,13 +4,7 @@ MAINTAINER Evgeny Frolov
 
 USER root
 
-RUN ls /home
-
-RUN ls /root
-
-RUN ls ~
-
-RUN ls ..
+RUN find / -type d -name MyMediaLite-3*
 
 # General dependencies
 RUN apt-get update \
@@ -37,3 +31,5 @@ RUN conda install -y seaborn --no-dep
 
 # Set permissions for MyMediaLite
 # RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
+
+RUN find / -type d -name MyMediaLite-3*
