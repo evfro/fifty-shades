@@ -28,4 +28,5 @@ USER main
 RUN conda install -y seaborn --no-dep
 
 # Set permissions for MyMediaLite
-RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
+# RUN chmod =rx ~/notebooks/MyMediaLite-3.11/bin/item_recommendation
+RUN ls
