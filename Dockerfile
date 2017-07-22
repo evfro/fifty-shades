@@ -1,8 +1,7 @@
-FROM andrewosh/binder-base
+# FROM andrewosh/binder-base
+FROM jupyter/base-notebook
 
 MAINTAINER Evgeny Frolov
-
-RUN find / -type d -name MyMediaLite-3*
 
 USER root
 
